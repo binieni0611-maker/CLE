@@ -115,9 +115,12 @@ const CoachingPrograms = () => {
                   </div>
                 )}
 
-                <button className="btn-primary w-full">
+                <a 
+                  href="#contact"
+                  className="btn-primary w-full block text-center"
+                >
                   프로그램 문의하기
-                </button>
+                </a>
               </div>
             ))}
           </div>

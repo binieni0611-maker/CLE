@@ -129,9 +129,12 @@ const HealthPrograms = () => {
                   </div>
                 )}
 
-                <button className="bg-pink-600 hover:bg-pink-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300 shadow-md hover:shadow-lg w-full">
+                <a 
+                  href="#contact"
+                  className="block bg-pink-600 hover:bg-pink-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300 shadow-md hover:shadow-lg w-full text-center"
+                >
                   프로그램 문의하기
-                </button>
+                </a>
               </div>
             ))}
           </div>

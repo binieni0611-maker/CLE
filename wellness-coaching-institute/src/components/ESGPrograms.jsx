@@ -71,7 +71,7 @@ const ESGPrograms = () => {
               >
                 {program.isCertification && (
                   <div className="bg-wellness-purple text-white text-center py-2 -mt-6 -mx-6 mb-4 rounded-t-xl font-bold">
-                    🏆 공식 자격 과정 - 자격명: ESG평생교육전문강사 (제2024-006386호)
+                    공식 자격 과정 - 자격명: ESG평생교육전문강사 (제2024-006386호)
                   </div>
                 )}
 

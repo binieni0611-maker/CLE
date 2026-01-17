@@ -35,7 +35,7 @@ const ESGPrograms = () => {
     {
       id: 'certification',
       title: 'ESG평생교육전문강사 양성과정',
-      icon: '🎖️',
+      icon: '',
       description: '공식 자격 과정 (제2024-006386호)',
       topics: [
         'ESG 교육 이론 및 실제',
@@ -92,7 +92,7 @@ const ESGPrograms = () => {
 
                 <button
                   onClick={() => setExpandedProgram(expandedProgram === program.id ? null : program.id)}
-                  className="text-blue-600 font-semibold hover:text-blue-800 transition mb-4"
+                  className="text-blue-600 font-semibold hover:text-blue-800 transition mb-4 flex items-center"
                 >
                   {expandedProgram === program.id ? '▲ 접기' : '▼ 교육 목차 보기'}
                 </button>
@@ -111,13 +111,16 @@ const ESGPrograms = () => {
                   </div>
                 )}
 
-                <button className={`${
-                  program.isCertification 
-                    ? 'bg-wellness-purple hover:bg-purple-700' 
-                    : 'bg-blue-600 hover:bg-blue-700'
-                } text-white font-medium py-3 px-8 rounded-lg transition duration-300 shadow-md hover:shadow-lg w-full`}>
+                <a 
+                  href="#contact"
+                  className={`block ${
+                    program.isCertification 
+                      ? 'bg-wellness-purple hover:bg-purple-700' 
+                      : 'bg-blue-600 hover:bg-blue-700'
+                  } text-white font-medium py-3 px-8 rounded-lg transition duration-300 shadow-md hover:shadow-lg w-full text-center`}
+                >
                   {program.isCertification ? '자격과정 문의하기' : '프로그램 문의하기'}
-                </button>
+                </a>
               </div>
             ))}
           </div>

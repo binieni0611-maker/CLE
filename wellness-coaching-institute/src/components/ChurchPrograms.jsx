@@ -96,7 +96,7 @@ const ChurchPrograms = () => {
 
                 <button
                   onClick={() => setExpandedProgram(expandedProgram === program.id ? null : program.id)}
-                  className="text-wellness-green font-semibold hover:text-green-700 transition mb-4"
+                  className="text-wellness-green font-semibold hover:text-green-700 transition mb-4 flex items-center"
                 >
                   {expandedProgram === program.id ? '▲ 접기' : '▼ 교육 목차 보기'}
                 </button>
@@ -115,9 +115,12 @@ const ChurchPrograms = () => {
                   </div>
                 )}
 
-                <button className="bg-wellness-green hover:bg-green-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300 shadow-md hover:shadow-lg w-full">
+                <a 
+                  href="#contact"
+                  className="block bg-wellness-green hover:bg-green-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300 shadow-md hover:shadow-lg w-full text-center"
+                >
                   프로그램 문의하기
-                </button>
+                </a>
               </div>
             ))}
           </div>

@@ -35,7 +35,7 @@ const ESGPrograms = () => {
     {
       id: 'certification',
       title: 'ESG평생교육전문강사 양성과정',
-      icon: '',
+      icon: '🏅',
       description: '공식 자격 과정 (제2024-006386호)',
       topics: [
         'ESG 교육 이론 및 실제',

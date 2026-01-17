@@ -2,9 +2,37 @@
 
 **THE 행복한 삶을 위한.. 건강한 몸과 마음, 행복한 삶을 위한 교육**
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/wellness-coaching-institute)
+
 ## 🌟 프로젝트 소개
 
 웰니스코칭연구소의 공식 홈페이지입니다. 교육학 박사, 코칭심리사, 간호사 출신 전문가가 이끄는 신뢰할 수 있는 교육 기관으로, 이론과 실무를 겸비한 전문성을 바탕으로 다양한 교육 프로그램을 제공합니다.
+
+## 🚀 빠른 시작
+
+### 배포하기 (3분 완성!)
+
+**👉 [배포 가이드 보기](DEPLOYMENT_GUIDE.md)** ← 클릭!
+
+가장 쉬운 방법:
+1. 이 저장소를 GitHub에 업로드
+2. [Vercel](https://vercel.com)에서 GitHub 연결
+3. 클릭 한 번으로 배포 완료! 🎉
+
+### 로컬에서 실행하기
+
+```bash
+# 프로젝트 폴더로 이동
+cd wellness-coaching-institute
+
+# 의존성 설치
+npm install
+
+# 개발 서버 실행
+npm run dev
+
+# 브라우저에서 http://localhost:3000 접속
+```
 
 ## 🎯 주요 특징
 

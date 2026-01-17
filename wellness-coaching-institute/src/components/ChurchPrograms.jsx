@@ -47,18 +47,18 @@ const ChurchPrograms = () => {
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop',
     },
     {
-      id: 'faith-parent',
-      title: '신앙 부모교육',
-      icon: '⛪',
-      description: '신앙과 발달심리를 통합한 부모교육',
+      id: 'grief-coaching',
+      title: '애도 코칭 프로그램',
+      icon: '🕊️',
+      description: '기독교 세계관 기반의 상실과 애도 회복 프로그램',
       topics: [
-        '기독교 세계관 기반 양육',
-        '자녀의 영적 성장 지원',
-        '성경적 훈육과 사랑',
-        '가정예배와 신앙 전승',
-        '부모의 영적 리더십',
+        '상실과 애도의 이해 (기독교적 관점)',
+        '슬픔의 단계와 건강한 애도 과정',
+        '영적 위로와 회복',
+        '신앙을 통한 의미 찾기',
+        '소망과 부활 신앙으로의 전환',
       ],
-      image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800&auto=format&fit=crop',
     },
   ];
 

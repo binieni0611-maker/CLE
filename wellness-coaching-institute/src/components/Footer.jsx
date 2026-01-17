@@ -70,7 +70,7 @@ const Footer = () => {
               © {currentYear} 웰니스코칭연구소. All rights reserved.
             </p>
             <p className="text-gray-500 text-xs mt-2">
-              교육학 박사 | 코칭심리사 | 간호사 출신 전문가
+              교육학 박사 | 코칭심리사 | 간호사 전문가
             </p>
           </div>
         </div>

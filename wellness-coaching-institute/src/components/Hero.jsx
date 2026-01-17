@@ -42,8 +42,8 @@ const Hero = () => {
             
             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300">
               <div className="text-wellness-purple text-4xl mb-3">⚕️</div>
-              <h3 className="font-bold text-lg mb-2">간호사 출신</h3>
-              <p className="text-sm text-gray-600">건강 전문 지식 보유</p>
+              <h3 className="font-bold text-lg mb-2">간호사</h3>
+              <p className="text-sm text-gray-600">현장 경험 보유</p>
             </div>
           </div>
 

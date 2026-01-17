@@ -8,18 +8,6 @@ const About = () => {
           <h2 className="section-title text-center mb-12">대표자 소개</h2>
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Photo */}
-            <div className="flex justify-center">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-lavender-300 to-purple-300 rounded-2xl transform rotate-3"></div>
-                <img 
-                  src="/director-photo.jpg" 
-                  alt="대표자 사진" 
-                  className="relative rounded-2xl shadow-2xl w-full max-w-md"
-                />
-              </div>
-            </div>
-
             {/* Content */}
             <div className="space-y-6">
               <div className="bg-gradient-to-r from-lavender-100 to-purple-100 rounded-xl p-8">
@@ -47,7 +35,7 @@ const About = () => {
                   <div className="flex items-start space-x-3">
                     <span className="text-wellness-purple text-2xl">✓</span>
                     <div>
-                      <h4 className="font-bold text-lg">간호사 출신</h4>
+                      <h4 className="font-bold text-lg">간호사</h4>
                       <p className="text-gray-600">현장 경험 기반 건강 전문가</p>
                     </div>
                   </div>
@@ -65,7 +53,7 @@ const About = () => {
                   </li>
                   <li className="flex items-center space-x-2">
                     <span className="text-wellness-purple">•</span>
-                    <span>간호사 현장 경험 기반의 신뢰감</span>
+                    <span>현장 경험 기반의 신뢰감</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <span className="text-wellness-purple">•</span>
@@ -76,6 +64,18 @@ const About = () => {
                     <span>발달심리와 건강관리의 융합</span>
                   </li>
                 </ul>
+              </div>
+            </div>
+
+            {/* Photo */}
+            <div className="flex justify-center">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-lavender-300 to-purple-300 rounded-2xl transform rotate-3"></div>
+                <img 
+                  src="/director-photo.jpg" 
+                  alt="대표자 사진" 
+                  className="relative rounded-2xl shadow-2xl w-full max-w-md"
+                />
               </div>
             </div>
           </div>

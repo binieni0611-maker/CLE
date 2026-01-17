@@ -60,7 +60,7 @@ const Contact = () => {
                     <div className="text-wellness-purple text-2xl">📧</div>
                     <div>
                       <h4 className="font-bold text-gray-800">이메일</h4>
-                      <p className="text-gray-600">wellness@coaching.kr</p>
+                      <p className="text-gray-600">binieni@hanmail.net</p>
                     </div>
                   </div>
 
@@ -68,7 +68,7 @@ const Contact = () => {
                     <div className="text-wellness-purple text-2xl">📱</div>
                     <div>
                       <h4 className="font-bold text-gray-800">전화</h4>
-                      <p className="text-gray-600">010-XXXX-XXXX</p>
+                      <p className="text-gray-600">010-8643-3155</p>
                     </div>
                   </div>
 

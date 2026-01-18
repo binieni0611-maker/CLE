@@ -117,7 +117,7 @@ const ESGPrograms = () => {
                     program.isCertification 
                       ? 'bg-wellness-purple hover:bg-purple-700' 
                       : 'bg-blue-600 hover:bg-blue-700'
-                  } text-white font-medium py-3 px-8 rounded-lg transition duration-300 shadow-md hover:shadow-lg w-full text-center`}
+                  } text-white font-bold py-4 px-8 rounded-lg transition duration-300 shadow-lg hover:shadow-xl w-full text-center text-lg`}
                 >
                   {program.isCertification ? '자격과정 문의하기' : '프로그램 문의하기'}
                 </a>

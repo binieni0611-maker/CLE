@@ -117,7 +117,7 @@ const ChurchPrograms = () => {
 
                 <a 
                   href="#contact"
-                  className="block bg-wellness-green hover:bg-green-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300 shadow-md hover:shadow-lg w-full text-center"
+                  className="block bg-wellness-green hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition duration-300 shadow-lg hover:shadow-xl w-full text-center text-lg"
                 >
                   프로그램 문의하기
                 </a>

@@ -117,7 +117,7 @@ const CoachingPrograms = () => {
 
                 <a 
                   href="#contact"
-                  className="btn-primary w-full block text-center"
+                  className="btn-primary w-full block text-center font-bold py-4 text-lg shadow-lg hover:shadow-xl"
                 >
                   프로그램 문의하기
                 </a>

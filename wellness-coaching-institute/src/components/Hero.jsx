@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Hero = () => {
+const Hero = ({ setCurrentSection }) => {
   const handleCategoryClick = (categoryId) => {
-    const section = document.getElementById(categoryId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
+    // 해당 섹션으로 전환
+    setCurrentSection(categoryId);
+    // 페이지 상단으로 스크롤
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const programCategories = [

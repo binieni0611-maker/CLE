@@ -18,7 +18,7 @@ function App() {
       
       {currentSection === 'home' && (
         <>
-          <Hero />
+          <Hero setCurrentSection={setCurrentSection} />
           <About />
         </>
       )}

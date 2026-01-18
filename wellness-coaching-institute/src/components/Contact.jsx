@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,8 @@ const Contact = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,28 +22,36 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setError(null);
     
-    // 이메일 본문 생성
-    const emailBody = `
-이름: ${formData.name}
-이메일: ${formData.email}
-연락처: ${formData.phone}
-관심 분야: ${formData.interest || '선택 안 함'}
+    try {
+      // EmailJS 설정 값
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-문의 내용:
-${formData.message}
-    `.trim();
-    
-    // mailto 링크로 이메일 앱 열기
-    const mailtoLink = `mailto:binieni@hanmail.net?subject=[웰니스코칭연구소] ${formData.name}님의 문의&body=${encodeURIComponent(emailBody)}`;
-    window.location.href = mailtoLink;
-    
-    // 성공 메시지 표시
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
+      // EmailJS로 이메일 전송
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone,
+        interest: formData.interest || '선택 안 함',
+        message: formData.message,
+        to_email: 'binieni@hanmail.net',
+      };
+
+      await emailjs.send(
+        serviceId,
+        templateId,
+        templateParams,
+        publicKey
+      );
+      
+      // 성공 메시지 표시
+      setSubmitted(true);
       setFormData({
         name: '',
         email: '',
@@ -48,7 +59,18 @@ ${formData.message}
         interest: '',
         message: '',
       });
-    }, 3000);
+
+      // 3초 후 성공 메시지 숨김
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 5000);
+      
+    } catch (err) {
+      console.error('EmailJS 전송 실패:', err);
+      setError('메시지 전송에 실패했습니다. 잠시 후 다시 시도해주세요.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -128,12 +150,18 @@ ${formData.message}
               {submitted ? (
                 <div className="bg-green-100 border-2 border-green-500 rounded-lg p-8 text-center">
                   <div className="text-green-600 text-5xl mb-4">✓</div>
-                  <h4 className="text-xl font-bold text-green-800 mb-2">문의가 접수되었습니다!</h4>
-                  <p className="text-green-700 mb-2">이메일 앱이 열립니다.</p>
-                  <p className="text-green-600 text-sm">이메일 앱에서 '보내기'를 클릭해주세요.</p>
+                  <h4 className="text-xl font-bold text-green-800 mb-2">문의가 성공적으로 전송되었습니다!</h4>
+                  <p className="text-green-700 mb-2">빠른 시일 내에 회신 드리겠습니다.</p>
+                  <p className="text-green-600 text-sm">감사합니다.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
+                  {error && (
+                    <div className="bg-red-100 border-2 border-red-500 rounded-lg p-4 text-center">
+                      <p className="text-red-700">{error}</p>
+                    </div>
+                  )}
+                  
                   <div>
                     <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
                       이름 *
@@ -219,9 +247,12 @@ ${formData.message}
 
                   <button
                     type="submit"
-                    className="btn-primary w-full text-lg"
+                    disabled={isSubmitting}
+                    className={`btn-primary w-full text-lg ${
+                      isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+                    }`}
                   >
-                    문의하기
+                    {isSubmitting ? '전송 중...' : '문의하기'}
                   </button>
                 </form>
               )}

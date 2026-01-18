@@ -21,8 +21,23 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // 실제 서비스에서는 여기에 API 호출 로직이 들어갑니다
-    console.log('Form submitted:', formData);
+    
+    // 이메일 본문 생성
+    const emailBody = `
+이름: ${formData.name}
+이메일: ${formData.email}
+연락처: ${formData.phone}
+관심 분야: ${formData.interest || '선택 안 함'}
+
+문의 내용:
+${formData.message}
+    `.trim();
+    
+    // mailto 링크로 이메일 앱 열기
+    const mailtoLink = `mailto:binieni@hanmail.net?subject=[웰니스코칭연구소] ${formData.name}님의 문의&body=${encodeURIComponent(emailBody)}`;
+    window.location.href = mailtoLink;
+    
+    // 성공 메시지 표시
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
@@ -114,7 +129,8 @@ const Contact = () => {
                 <div className="bg-green-100 border-2 border-green-500 rounded-lg p-8 text-center">
                   <div className="text-green-600 text-5xl mb-4">✓</div>
                   <h4 className="text-xl font-bold text-green-800 mb-2">문의가 접수되었습니다!</h4>
-                  <p className="text-green-700">빠른 시일 내에 연락드리겠습니다.</p>
+                  <p className="text-green-700 mb-2">이메일 앱이 열립니다.</p>
+                  <p className="text-green-600 text-sm">이메일 앱에서 '보내기'를 클릭해주세요.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">

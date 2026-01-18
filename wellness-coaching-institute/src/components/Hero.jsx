@@ -1,17 +1,63 @@
 import React from 'react';
 
 const Hero = () => {
+  const handleCategoryClick = (categoryId) => {
+    const section = document.getElementById(categoryId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const programCategories = [
+    {
+      id: 'coaching',
+      title: '코칭 교육',
+      icon: '👨‍🏫',
+      color: 'from-purple-400 to-purple-600',
+      bgColor: 'bg-purple-50',
+      borderColor: 'border-purple-300',
+      count: 4
+    },
+    {
+      id: 'church',
+      title: '교회 평생교육',
+      icon: '⛪',
+      color: 'from-green-400 to-green-600',
+      bgColor: 'bg-green-50',
+      borderColor: 'border-green-300',
+      count: 4
+    },
+    {
+      id: 'esg',
+      title: 'ESG와 평생교육',
+      icon: '🌍',
+      color: 'from-blue-400 to-blue-600',
+      bgColor: 'bg-blue-50',
+      borderColor: 'border-blue-300',
+      count: 4
+    },
+    {
+      id: 'health',
+      title: '보건 교육',
+      icon: '❤️',
+      color: 'from-pink-400 to-pink-600',
+      bgColor: 'bg-pink-50',
+      borderColor: 'border-pink-300',
+      count: 5
+    }
+  ];
+
   return (
-    <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section className="relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-lavender-100 via-purple-50 to-wellness-cream"></div>
       
       {/* Decorative circles */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-lavender-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
       <div className="absolute top-40 right-10 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-      <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-wellness-lavender rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+      <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-wellness-lavender rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 py-16">
         <div className="text-center max-w-4xl mx-auto">
           {/* Main Slogan */}
           <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
@@ -48,13 +94,48 @@ const Hero = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="mt-12">
+          <div className="mt-12 mb-16">
             <a 
               href="#contact" 
               className="btn-primary inline-block text-lg"
             >
               상담 문의하기
             </a>
+          </div>
+        </div>
+
+        {/* Program Map - 화살표 위치에 배치 */}
+        <div className="max-w-6xl mx-auto mt-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">교육 프로그램 한눈에 보기</h2>
+            <p className="text-lg text-gray-600">
+              4개 분야, 17개 전문 교육 프로그램
+            </p>
+          </div>
+
+          {/* Program Categories Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {programCategories.map((category) => (
+              <div 
+                key={category.id}
+                className={`${category.bgColor} border-2 ${category.borderColor} rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2`}
+                onClick={() => handleCategoryClick(category.id)}
+              >
+                {/* Category Icon & Title */}
+                <div className="text-center mb-4">
+                  <div className="text-5xl mb-3">{category.icon}</div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-1">{category.title}</h3>
+                  <p className="text-sm text-gray-600">{category.count}개 프로그램</p>
+                </div>
+
+                {/* View Button */}
+                <button 
+                  className={`w-full bg-gradient-to-r ${category.color} text-white font-bold py-3 px-4 rounded-lg hover:shadow-lg transition-all duration-300`}
+                >
+                  자세히 보기 →
+                </button>
+              </div>
+            ))}
           </div>
         </div>
       </div>

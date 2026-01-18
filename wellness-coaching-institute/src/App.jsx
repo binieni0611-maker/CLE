@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
-import ProgramMap from './components/ProgramMap';
 import CoachingPrograms from './components/CoachingPrograms';
 import ChurchPrograms from './components/ChurchPrograms';
 import ESGPrograms from './components/ESGPrograms';
@@ -21,7 +20,6 @@ function App() {
         <>
           <Hero />
           <About />
-          <ProgramMap />
         </>
       )}
       

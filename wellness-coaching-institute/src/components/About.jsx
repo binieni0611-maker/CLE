@@ -2,14 +2,14 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className="py-16 bg-white" id="about">
+    <section className="py-20 bg-white" id="about">
       <div className="container mx-auto px-4">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">대표자 소개</h2>
+        <div className="max-w-6xl mx-auto">
+          <h2 className="section-title text-center mb-12">대표자 소개</h2>
           
-          <div className="grid md:grid-cols-3 gap-8 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Content */}
-            <div className="space-y-6 md:col-span-2">
+            <div className="space-y-6">
               <div className="bg-gradient-to-r from-lavender-100 to-purple-100 rounded-xl p-8">
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">
                   이론과 실무를 겸비한 전문가
@@ -68,13 +68,13 @@ const About = () => {
             </div>
 
             {/* Photo */}
-            <div className="flex justify-center md:col-span-1">
-              <div className="relative w-48">
-                <div className="absolute inset-0 bg-gradient-to-br from-lavender-300 to-purple-300 rounded-xl transform rotate-3"></div>
+            <div className="flex justify-center">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-lavender-300 to-purple-300 rounded-2xl transform rotate-3"></div>
                 <img 
                   src="/director-photo.jpg" 
                   alt="대표자 사진" 
-                  className="relative rounded-xl shadow-xl w-full"
+                  className="relative rounded-2xl shadow-2xl w-full max-w-md"
                 />
               </div>
             </div>

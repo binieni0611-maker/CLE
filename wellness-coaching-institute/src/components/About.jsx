@@ -8,20 +8,8 @@ const About = () => {
           <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">대표자 소개</h2>
           
           <div className="grid lg:grid-cols-12 gap-8 items-start">
-            {/* Photo - 왼쪽 */}
-            <div className="lg:col-span-4 flex justify-center">
-              <div className="relative w-full max-w-sm">
-                <div className="absolute inset-0 bg-gradient-to-br from-lavender-300 to-purple-300 rounded-xl transform rotate-3"></div>
-                <img 
-                  src="/director-photo.jpg" 
-                  alt="대표자 사진" 
-                  className="relative rounded-xl shadow-xl w-full"
-                />
-              </div>
-            </div>
-
-            {/* Content - 오른쪽 */}
-            <div className="lg:col-span-8 space-y-5">
+            {/* Content - 왼쪽 */}
+            <div className="lg:col-span-8 space-y-5 order-2 lg:order-1">
               {/* 주요 자격 */}
               <div className="bg-gradient-to-r from-lavender-100 to-purple-100 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">
@@ -91,6 +79,10 @@ const About = () => {
                   </h4>
                   <div className="space-y-2">
                     <div className="bg-white rounded-lg p-3 shadow-sm">
+                      <h5 className="font-bold text-gray-800 text-sm">ESG와 평생교육</h5>
+                      <p className="text-xs text-gray-600">2025, 유페이퍼</p>
+                    </div>
+                    <div className="bg-white rounded-lg p-3 shadow-sm">
                       <h5 className="font-bold text-gray-800 text-sm">평생교육방법론</h5>
                       <p className="text-xs text-gray-600">2023, 양성원</p>
                     </div>
@@ -100,6 +92,18 @@ const About = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* Photo - 오른쪽 */}
+            <div className="lg:col-span-4 flex justify-center order-1 lg:order-2">
+              <div className="relative w-full max-w-sm">
+                <div className="absolute inset-0 bg-gradient-to-br from-lavender-300 to-purple-300 rounded-xl transform rotate-3"></div>
+                <img 
+                  src="/director-photo.jpg" 
+                  alt="대표자 사진" 
+                  className="relative rounded-xl shadow-xl w-full"
+                />
               </div>
             </div>
           </div>

@@ -103,7 +103,6 @@ const HealthPrograms = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 text-white">
-                    <span className="text-4xl mb-2 block">{program.icon}</span>
                     <h3 className="text-2xl font-bold">{program.title}</h3>
                   </div>
                 </div>

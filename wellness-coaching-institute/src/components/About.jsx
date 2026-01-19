@@ -65,6 +65,28 @@ const About = () => {
                   </li>
                 </ul>
               </div>
+
+              {/* 저서 */}
+              <div className="bg-gradient-to-br from-purple-50 to-lavender-50 border-2 border-purple-200 rounded-xl p-6">
+                <div className="flex items-center space-x-2 mb-4">
+                  <span className="text-2xl">📚</span>
+                  <h4 className="font-bold text-lg text-gray-800">저서</h4>
+                </div>
+                <div className="space-y-3">
+                  <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                    <h5 className="font-bold text-gray-800 mb-1">ESG와 평생교육</h5>
+                    <p className="text-sm text-gray-600">2025, 유페이퍼</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                    <h5 className="font-bold text-gray-800 mb-1">평생교육방법론</h5>
+                    <p className="text-sm text-gray-600">2023, 양성원</p>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                    <h5 className="font-bold text-gray-800 mb-1">지역사회 선교를 위한 교회평생교육</h5>
+                    <p className="text-sm text-gray-600">2023, 지우</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Photo */}

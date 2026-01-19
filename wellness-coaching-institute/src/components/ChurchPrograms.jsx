@@ -30,7 +30,7 @@ const ChurchPrograms = () => {
         '세대 간 소통 방법',
         '의미 있는 노년기 설계',
       ],
-      image: 'https://images.unsplash.com/photo-1581579186913-45ac3e6efe93?w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1595435742656-5272d0b3fa82?w=800&auto=format&fit=crop',
     },
     {
       id: 'career',

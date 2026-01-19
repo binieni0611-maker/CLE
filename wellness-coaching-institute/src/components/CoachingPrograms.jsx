@@ -44,7 +44,7 @@ const CoachingPrograms = () => {
         '자녀의 자존감 향상 방법',
         '문제행동 이해와 대응',
       ],
-      image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?w=800&auto=format&fit=crop',
     },
     {
       id: 'communication',

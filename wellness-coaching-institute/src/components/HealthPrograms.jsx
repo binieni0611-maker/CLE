@@ -60,7 +60,7 @@ const HealthPrograms = () => {
         '가족과 함께하는 회복',
         '건강한 습관 형성',
       ],
-      image: 'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&auto=format&fit=crop',
     },
     {
       id: 'self-care',
@@ -74,7 +74,7 @@ const HealthPrograms = () => {
         '번아웃 예방과 회복',
         '건강한 경계 설정',
       ],
-      image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&auto=format&fit=crop',
     },
   ];
 

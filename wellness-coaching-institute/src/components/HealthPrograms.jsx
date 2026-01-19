@@ -74,7 +74,7 @@ const HealthPrograms = () => {
         '번아웃 예방과 회복',
         '건강한 경계 설정',
       ],
-      image: 'https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?w=800&auto=format&fit=crop',
+      image: '/self-care-meditation.jpg',
     },
   ];
 

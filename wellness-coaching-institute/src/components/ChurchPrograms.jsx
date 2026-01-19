@@ -16,7 +16,7 @@ const ChurchPrograms = () => {
         '중년기 영적 성숙',
         '노년기 신앙과 삶의 의미',
       ],
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1476234251651-f353703a034d?w=800&auto=format&fit=crop',
     },
     {
       id: 'senior',
@@ -30,7 +30,7 @@ const ChurchPrograms = () => {
         '세대 간 소통 방법',
         '의미 있는 노년기 설계',
       ],
-      image: 'https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=800&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=800&auto=format&fit=crop',
     },
     {
       id: 'career',

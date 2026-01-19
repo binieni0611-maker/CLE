@@ -74,15 +74,11 @@ const About = () => {
                 </div>
                 <div className="space-y-3">
                   <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
-                    <h5 className="font-bold text-gray-800 mb-1">ESG와 평생교육</h5>
-                    <p className="text-sm text-gray-600">2025, 유페이퍼</p>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
                     <h5 className="font-bold text-gray-800 mb-1">평생교육방법론</h5>
                     <p className="text-sm text-gray-600">2023, 양성원</p>
                   </div>
                   <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
-                    <h5 className="font-bold text-gray-800 mb-1">지역사회 선교를 위한 교회평생교육</h5>
+                    <h5 className="font-bold text-gray-800 mb-1">지역사회를 위한 교회평생교육</h5>
                     <p className="text-sm text-gray-600">2023, 지우</p>
                   </div>
                 </div>

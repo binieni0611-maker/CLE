@@ -60,7 +60,7 @@ const HealthPrograms = () => {
         '가족과 함께하는 회복',
         '건강한 습관 형성',
       ],
-      image: 'https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=800&auto=format&fit=crop',
+      image: '/brain-neural-network.jpg',
     },
     {
       id: 'self-care',

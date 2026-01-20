@@ -58,6 +58,17 @@ const Footer = () => {
                   <span>010-2069-3162</span>
                 </li>
                 <li className="flex items-center space-x-2">
+                  <span>💬</span>
+                  <a 
+                    href="https://pf.kakao.com/_hMfAX/friend" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white underline"
+                  >
+                    카카오톡 상담
+                  </a>
+                </li>
+                <li className="flex items-center space-x-2">
                   <span>🕐</span>
                   <span>평일 09:00 - 18:00</span>
                 </li>

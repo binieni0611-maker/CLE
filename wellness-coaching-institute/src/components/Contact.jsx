@@ -123,16 +123,26 @@ const Contact = () => {
 
                   <div className="flex items-start space-x-4">
                     <div className="text-wellness-purple text-2xl">💬</div>
-                    <div>
+                    <div className="flex-1">
                       <h4 className="font-bold text-gray-800">카카오채널</h4>
                       <a 
                         href="https://pf.kakao.com/_hMfAX/friend" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-wellness-purple hover:text-purple-700 underline"
+                        className="inline-block bg-[#FEE500] hover:bg-[#FFD700] text-gray-800 font-semibold px-4 py-2 rounded-lg transition duration-300 mt-2"
                       >
-                        카카오톡 상담하기
+                        💬 카카오톡 상담하기
                       </a>
+                      <p className="text-xs text-gray-500 mt-2">
+                        <a 
+                          href="https://pf.kakao.com/_hMfAX/friend" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-wellness-purple hover:text-purple-700 underline"
+                        >
+                          https://pf.kakao.com/_hMfAX
+                        </a>
+                      </p>
                     </div>
                   </div>
 

@@ -57,15 +57,18 @@ const Footer = () => {
                   <span>📱</span>
                   <span>010-2069-3162</span>
                 </li>
-                <li className="flex items-center space-x-2">
-                  <span>💬</span>
+                <li className="flex flex-col space-y-1">
+                  <div className="flex items-center space-x-2">
+                    <span>💬</span>
+                    <span>카카오채널</span>
+                  </div>
                   <a 
                     href="https://pf.kakao.com/_hMfAX/friend" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="hover:text-white underline"
+                    className="text-gray-400 hover:text-white underline text-xs ml-6"
                   >
-                    카카오톡 상담
+                    pf.kakao.com/_hMfAX
                   </a>
                 </li>
                 <li className="flex items-center space-x-2">

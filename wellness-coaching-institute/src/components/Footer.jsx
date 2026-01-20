@@ -55,7 +55,7 @@ const Footer = () => {
                 </li>
                 <li className="flex items-center space-x-2">
                   <span>📱</span>
-                  <span>010-8643-3155</span>
+                  <span>010-2069-3162</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <span>🕐</span>
